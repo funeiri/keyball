@@ -35,8 +35,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define TAP_CODE_DELAY 5
 
+#define OLED_TIMEOUT 120000
+#define TAPPING_TERM 180
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE
-#define AUTO_MOUSE_DEFAULT_LAYER 5
-
+#define AUTO_MOUSE_DEFAULT_LAYER 4
+#define COMBO_ONLY_FROM_LAYER 0
 #define DYNAMIC_KEYMAP_LAYER_COUNT 5
 #define KEYBALL_SCROLL_DIV_DEFAULT 5
