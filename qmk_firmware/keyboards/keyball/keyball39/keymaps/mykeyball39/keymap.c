@@ -79,7 +79,7 @@ void pointing_device_init_user(void) {
 #ifdef COMBO_ENABLE
 const uint16_t PROGMEM keyball39_combo1[] = {KC_A, KC_H, COMBO_END};
 const uint16_t PROGMEM keyball39_combo2[] = {KC_A, KC_D, COMBO_END};
-const uint16_t PROGMEM keyball39_combo3[] = {KC_S, KC_D, KC_F. COMBO_END};
+const uint16_t PROGMEM keyball39_combo3[] = {KC_S, KC_D, KC_F, COMBO_END};
 const uint16_t PROGMEM keyball39_combo4[] = {KC_J, KC_K, KC_L, COMBO_END};
 const uint16_t PROGMEM keyball39_combo5[] = {KC_W, KC_E, COMBO_END};
 const uint16_t PROGMEM keyball39_combo6[] = {KC_E, KC_R, COMBO_END};
