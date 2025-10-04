@@ -92,6 +92,8 @@ const uint16_t PROGMEM keyball39_combo12[] = {KC_A, KC_B, COMBO_END};
 const uint16_t PROGMEM keyball39_combo13[] = {KC_A, KC_P, COMBO_END};
 const uint16_t PROGMEM keyball39_combo14[] = {KC_A, KC_F, COMBO_END};
 const uint16_t PROGMEM keyball39_combo15[] = {KC_A, KC_N, COMBO_END};
+const uint16_t PROGMEM keyball39_combo16[] = {KC_F, KC_G, COMBO_END};
+const uint16_t PROGMEM keyball39_combo17[] = {KC_H, KC_J, COMBO_END};
 
 combo_t key_combos[] = {
 COMBO(keyball39_combo1, KC_BACKSPACE),
@@ -109,5 +111,7 @@ COMBO(keyball39_combo12, KC_LEFT),
 COMBO(keyball39_combo13, KC_UP),
 COMBO(keyball39_combo14, KC_RIGHT),
 COMBO(keyball39_combo15, KC_DOWN),
+COMBO(keyball39_combo16, KC_INTERNATIONAL_5),
+COMBO(keyball39_combo17, KC_INTERNATIONAL_4),
 };
 #endif
