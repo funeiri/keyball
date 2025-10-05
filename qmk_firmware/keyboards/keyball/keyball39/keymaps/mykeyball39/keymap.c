@@ -77,41 +77,21 @@ void pointing_device_init_user(void) {
 #endif
 
 #ifdef COMBO_ENABLE
-const uint16_t PROGMEM keyball39_combo1[] = {KC_A, KC_H, COMBO_END};
-const uint16_t PROGMEM keyball39_combo2[] = {KC_A, KC_D, COMBO_END};
-const uint16_t PROGMEM keyball39_combo3[] = {KC_S, KC_D, KC_F, COMBO_END};
-const uint16_t PROGMEM keyball39_combo4[] = {KC_J, KC_K, KC_L, COMBO_END};
-const uint16_t PROGMEM keyball39_combo5[] = {KC_W, KC_E, COMBO_END};
-const uint16_t PROGMEM keyball39_combo6[] = {KC_E, KC_R, COMBO_END};
-const uint16_t PROGMEM keyball39_combo7[] = {KC_X, KC_C, COMBO_END};
-const uint16_t PROGMEM keyball39_combo8[] = {KC_C, KC_V, COMBO_END};
-const uint16_t PROGMEM keyball39_combo9[] = {KC_X, KC_V, COMBO_END};
-const uint16_t PROGMEM keyball39_combo10[] = {KC_A, KC_K, COMBO_END};
-const uint16_t PROGMEM keyball39_combo11[] = {KC_A, KC_L, COMBO_END};
-const uint16_t PROGMEM keyball39_combo12[] = {KC_A, KC_B, COMBO_END};
-const uint16_t PROGMEM keyball39_combo13[] = {KC_A, KC_P, COMBO_END};
-const uint16_t PROGMEM keyball39_combo14[] = {KC_A, KC_F, COMBO_END};
-const uint16_t PROGMEM keyball39_combo15[] = {KC_A, KC_N, COMBO_END};
-const uint16_t PROGMEM keyball39_combo16[] = {KC_F, KC_G, COMBO_END};
-const uint16_t PROGMEM keyball39_combo17[] = {KC_H, KC_J, COMBO_END};
+const uint16_t PROGMEM keyball39_combo1[] = {KC_W, KC_E, COMBO_END};
+const uint16_t PROGMEM keyball39_combo2[] = {KC_E, KC_R, COMBO_END};
+const uint16_t PROGMEM keyball39_combo3[] = {KC_X, KC_C, COMBO_END};
+const uint16_t PROGMEM keyball39_combo4[] = {KC_C, KC_V, COMBO_END};
+const uint16_t PROGMEM keyball39_combo5[] = {KC_X, KC_V, COMBO_END};
+const uint16_t PROGMEM keyball39_combo6[] = {KC_D, KC_F, COMBO_END};
+const uint16_t PROGMEM keyball39_combo7[] = {KC_J, KC_K, COMBO_END};
 
 combo_t key_combos[] = {
-COMBO(keyball39_combo1, KC_BACKSPACE),
-COMBO(keyball39_combo2, KC_DELETE),
-COMBO(keyball39_combo3, KC_SPACE),
-COMBO(keyball39_combo4, KC_ENTER),
-COMBO(keyball39_combo5, KC_TAB),
-COMBO(keyball39_combo6, LSFT(KC_TAB)),
-COMBO(keyball39_combo7, LCTL(KC_C)),
-COMBO(keyball39_combo8, LCTL(KC_V)),
-COMBO(keyball39_combo9, LGUI(KC_V)),
-COMBO(keyball39_combo10, KC_F8),
-COMBO(keyball39_combo11, KC_F10),
-COMBO(keyball39_combo12, KC_LEFT),
-COMBO(keyball39_combo13, KC_UP),
-COMBO(keyball39_combo14, KC_RIGHT),
-COMBO(keyball39_combo15, KC_DOWN),
-COMBO(keyball39_combo16, KC_INTERNATIONAL_5),
-COMBO(keyball39_combo17, KC_INTERNATIONAL_4),
+COMBO(keyball39_combo1, KC_TAB),
+COMBO(keyball39_combo2, LSFT(KC_TAB)),
+COMBO(keyball39_combo3, LCTL(KC_C)),
+COMBO(keyball39_combo4, LCTL(KC_V)),
+COMBO(keyball39_combo5, LGUI(KC_V)),
+COMBO(keyball39_combo6, KC_INTERNATIONAL_5),
+COMBO(keyball39_combo7, KC_INTERNATIONAL_4),
 };
 #endif
