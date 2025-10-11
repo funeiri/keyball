@@ -84,6 +84,9 @@ const uint16_t PROGMEM keyball39_combo4[] = {KC_C, KC_V, COMBO_END};
 const uint16_t PROGMEM keyball39_combo5[] = {KC_X, KC_V, COMBO_END};
 const uint16_t PROGMEM keyball39_combo6[] = {KC_D, KC_F, COMBO_END};
 const uint16_t PROGMEM keyball39_combo7[] = {KC_J, KC_K, COMBO_END};
+const uint16_t PROGMEM keyball39_combo8[] = {KC_LEFT_CTRL, KC_LEFT_SHIFT, KC_LEFT_ALT, KC_D, COMBO_END};
+const uint16_t PROGMEM keyball39_combo9[] = {KC_LEFT_CTRL, KC_LEFT_SHIFT, KC_LEFT_ALT, KC_H, COMBO_END};
+const uint16_t PROGMEM keyball39_combo10[] = {KC_LEFT_CTRL, KC_LEFT_SHIFT, KC_LEFT_ALT, KC_K, COMBO_END};
 
 combo_t key_combos[] = {
 COMBO(keyball39_combo1, KC_TAB),
@@ -93,5 +96,8 @@ COMBO(keyball39_combo4, LCTL(KC_V)),
 COMBO(keyball39_combo5, LGUI(KC_V)),
 COMBO(keyball39_combo6, KC_INTERNATIONAL_5),
 COMBO(keyball39_combo7, KC_INTERNATIONAL_4),
+COMBO(keyball39_combo8, KC_DELETE),
+COMBO(keyball39_combo9, KC_BACKSPACE),
+COMBO(keyball39_combo9, KC_F7),
 };
 #endif
