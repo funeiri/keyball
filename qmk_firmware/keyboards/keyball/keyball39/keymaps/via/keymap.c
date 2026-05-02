@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 layer_state_t layer_state_set_user(layer_state_t state) {
     // Auto enable scroll mode when the highest layer is 3
-    keyball_set_scroll_mode(get_highest_layer(state) == 3);
+    keyball_set_scroll_mode(get_highest_layer(state) == 4);
     return state;
 }
 
@@ -68,4 +68,34 @@ void oledkit_render_info_user(void) {
     keyball_oled_render_ballinfo();
     keyball_oled_render_layerinfo();
 }
+#endif
+
+#ifdef POINTING_DEVICE_AUTO_MOUSE_ENABLE
+void pointing_device_init_user(void) {
+    set_auto_mouse_enable(true);
+}
+#endif
+
+#ifdef COMBO_ENABLE
+const uint16_t PROGMEM keyball39_combo1[] = {KC_W, KC_E, COMBO_END};
+const uint16_t PROGMEM keyball39_combo2[] = {KC_E, KC_R, COMBO_END};
+/*
+const uint16_t PROGMEM keyball39_combo3[] = {KC_X, KC_C, COMBO_END};
+const uint16_t PROGMEM keyball39_combo4[] = {KC_C, KC_V, COMBO_END};
+const uint16_t PROGMEM keyball39_combo5[] = {KC_X, KC_V, COMBO_END};
+const uint16_t PROGMEM keyball39_combo6[] = {KC_D, KC_F, COMBO_END};
+const uint16_t PROGMEM keyball39_combo7[] = {KC_J, KC_K, COMBO_END};
+*/
+
+combo_t key_combos[] = {
+COMBO(keyball39_combo1, KC_TAB),
+COMBO(keyball39_combo2, LSFT(KC_TAB)),
+/*
+COMBO(keyball39_combo3, LCTL(KC_C)),
+COMBO(keyball39_combo4, LCTL(KC_V)),
+COMBO(keyball39_combo5, LGUI(KC_V)),
+COMBO(keyball39_combo6, KC_INTERNATIONAL_5),
+COMBO(keyball39_combo7, KC_INTERNATIONAL_4),
+*/
+};
 #endif
