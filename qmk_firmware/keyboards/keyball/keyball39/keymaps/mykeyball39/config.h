@@ -47,7 +47,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define COMBO_ONLY_FROM_LAYER 0
 
 // Time until layer switch key is enabled
-#define TAPPING_TERM 180
+#define TAPPING_TERM 200
 
 // Add layer
 #define DYNAMIC_KEYMAP_LAYER_COUNT 5
