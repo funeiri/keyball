@@ -56,25 +56,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 layer_state_t layer_state_set_user(layer_state_t state) {
     // Auto enable scroll mode when the highest layer is 3
     keyball_set_scroll_mode(get_highest_layer(state) == 4);
-    // LED setting
-    uint8_t layer = biton32(state);
-    switch (layer) {
-        case 0:
-            rgblight_sethsv(HSV_WHITE);
-            break;
-        case 1:
-            rgblight_sethsv(HSV_PURPLE);
-            break;
-        case 2:
-            rgblight_sethsv(HSV_GREEN);
-            break;
-        case 3:
-            rgblight_sethsv(HSV_BLUE);
-            break;
-        case 4:
-            rgblight_sethsv(HSV_CYAN);
-            break;
-    }
     return state;
 }
 
